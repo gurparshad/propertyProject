@@ -1,0 +1,33 @@
+[
+  {
+  "id": 1,
+  "sellRent": 1,
+  "name": "Gurus",
+  "type": "house",
+  "image": "house1",
+  "price": 12000
+},
+{
+  "id": 2,
+  "sellRent": 1,
+  "name": "Gurus 2",
+  "type": "apartment",
+  "image": "house2",
+  "price": 16000
+},
+{
+  "id": 3,
+  "sellRent": 2,
+  "name": "Gurus 3",
+  "type": "villa",
+  "image": "house3",
+  "price": 14000
+},
+{
+  "id": 4,
+  "sellRent": 2,
+  "name": "Gurus 4",
+  "type": "beach house",
+  "price": 1000
+}
+]
