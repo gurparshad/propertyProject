@@ -1,0 +1,8 @@
+/* the boder will be red only when both classes will true */
+.ng-invalid.ng-touched {
+  border-color: red;
+}
+
+.error-block {
+  color: red;
+}
