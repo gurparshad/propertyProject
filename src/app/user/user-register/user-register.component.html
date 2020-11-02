@@ -1,0 +1,49 @@
+<div class="card">
+  <div class="card-header">
+    Register
+  </div>
+  <div class="card-body">
+    <form [formGroup]="registerationForm" (ngSubmit)="onSubmit()">
+      <div class="form-group col-12">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" formControlName="userName">
+        <span class="error-block" *ngIf="!userName.valid
+      && userName.touched">
+        Enter a valid Name</span>
+      </div>
+
+
+      <div class="form-group col-12">
+        <label for="type">Email</label>
+        <input type="email" class="form-control" formControlName="userEmail" >
+        <span class="error-block" *ngIf="!userEmail.valid
+        && userEmail.touched">
+          Enter a valid Email</span>
+      </div>
+
+      <div class="form-group col-12">
+        <label for="name">Password</label>
+        <input type="password" class="form-control" formControlName="userPassword">
+        <span class="error-block" *ngIf="!userPassword.valid
+        && userPassword.touched">
+          Enter a valid Password</span>
+      </div>
+
+      <div class="form-group col-12">
+        <label for="name">Confirm Password</label>
+        <input type="password" class="form-control" formControlName="userConfirmPassword">
+        <span class="error-block" *ngIf="!userConfirmPassword.valid
+        && userConfirmPassword.touched">
+          Enter a valid Confirm Password</span>
+          <span class="error-block" *ngIf="registerationForm.hasError('notmatched') && userConfirmPassword.valid">
+              Password not match
+          </span>
+      </div>
+
+      <div class="form-group col-12">
+        <button type="submit" class="btn btn-primary mr-2">Save</button>
+        <button type="reset" class="btn btn-secondary">Cancel</button>
+      </div>
+    </form>
+  </div>
+</div>
